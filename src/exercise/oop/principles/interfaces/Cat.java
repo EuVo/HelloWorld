@@ -17,4 +17,5 @@ public class Cat implements Animal{
     public void travel() {
         System.out.println("Кошка путешествует");
     }
+
 }
