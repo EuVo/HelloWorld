@@ -37,6 +37,11 @@ public class Calculator extends JFrame {
 
         Maths maths = new Maths();
 
+        JButton[] arr = {button1, button2, button3, button5, button6, button7, button9, button10, button11, button14};
+        for(JButton button : arr){
+            setButtonPressed(button);
+        }
+
         getAddition();
         getSubtraction();
         getDivision();
@@ -105,6 +110,15 @@ public class Calculator extends JFrame {
                 }
 
                 inputField.setText(String.valueOf(result));
+            }
+        });
+    }
+
+    public void setButtonPressed(JButton jButton){
+        jButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                inputField.setText(jButton.getText());
             }
         });
     }
