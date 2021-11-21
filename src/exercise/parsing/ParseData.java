@@ -68,6 +68,7 @@ public class ParseData {
                 System.out.println("companies: " + iterator.next());
             }
         } catch (Exception e) {
+            //Вывод ошибки(например, нет такого файла)
             e.printStackTrace();
         }
     }
