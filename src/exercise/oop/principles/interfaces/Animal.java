@@ -1,7 +1,7 @@
 package exercise.oop.principles.interfaces;
 
 
-public interface Animal {
+public interface Animal extends Atom, World{
 
     /*
     1. Функции по умолчанию public, abstract, static
